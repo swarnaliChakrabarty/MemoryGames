@@ -3,51 +3,51 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardArray = [
       {
         name: 'fries',
-        img: 'img/food1.PNG'
+        img: 'food1.PNG'
       },
       {
         name: 'cheeseburger',
-        img: 'img/food2.PNG'
+        img: 'food2.PNG'
       },
       {
         name: 'ice-cream',
-        img: 'img/food3.JPEG'
+        img: 'food3.JPEG'
       },
       {
         name: 'pizza',
-        img: 'img/food4.PNG'
+        img: 'food4.PNG'
       },
       {
         name: 'milkshake',
-        img: 'img/food5.PNG'
+        img: 'food5.PNG'
       },
       {
         name: 'hotdog',
-        img: 'img/food6.PNG'
+        img: 'food6.PNG'
       },
       {
         name: 'fries',
-        img: 'img/food1.PNG'
+        img: 'food1.PNG'
       },
       {
         name: 'cheeseburger',
-        img: 'img/food2.PNG'
+        img: 'food2.PNG'
       },
       {
         name: 'ice-cream',
-        img: 'img/food3.JPEG'
+        img: 'food3.JPEG'
       },
       {
         name: 'pizza',
-        img: 'img/food4.PNG'
+        img: 'food4.PNG'
       },
       {
         name: 'milkshake',
-        img: 'img/food5.PNG'
+        img: 'food5.PNG'
       },
       {
         name: 'hotdog',
-        img: 'img/food6.PNG'
+        img: 'food6.PNG'
       }
     ]
   
@@ -77,20 +77,20 @@ document.addEventListener('DOMContentLoaded', () => {
       const optionTwoId = cardsChosenId[1]
       
       if(optionOneId == optionTwoId) {
-        cards[optionOneId].setAttribute('src', 'img/blank.PNG')
-        cards[optionTwoId].setAttribute('src', 'img/blank.PNG')
+        cards[optionOneId].setAttribute('src', 'blank.PNG')
+        cards[optionTwoId].setAttribute('src', 'blank.PNG')
         // console.log('You have clicked the same image!')
       }
       else if (cardsChosen[0] === cardsChosen[1]) {
         
-        cards[optionOneId].setAttribute('src', 'img/done.PNG')
-        cards[optionTwoId].setAttribute('src', 'img/done.PNG')
+        cards[optionOneId].setAttribute('src', 'done.PNG')
+        cards[optionTwoId].setAttribute('src', 'done.PNG')
         cards[optionOneId].removeEventListener('click', flipCard)
         cards[optionTwoId].removeEventListener('click', flipCard)
         cardsWon.push(cardsChosen)
       } else {
-        cards[optionOneId].setAttribute('src', 'img/blank.PNG')
-        cards[optionTwoId].setAttribute('src', 'img/blank.PNG')
+        cards[optionOneId].setAttribute('src', 'blank.PNG')
+        cards[optionTwoId].setAttribute('src', 'blank.PNG')
        
       }
       cardsChosen = []
