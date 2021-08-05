@@ -1,0 +1,25 @@
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height:600px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+img{
+    width:150px;
+    height:150px;
+}
+h3{
+    position: relative;
+    left: 45px;
+    top:45px;
+    width: 90px;
+    height: 30px;
+    padding: 5px 5px;
+    background-color: rgb(78, 196, 250);
+    border-radius: 5px;
+}
